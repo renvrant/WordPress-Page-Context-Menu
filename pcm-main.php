@@ -53,7 +53,7 @@ class PCM_Main {
 	    }
 
 		$output .= '<ul clas="pcm-list">';
-	    $output .= '<li class="'. (($page->ID == $parent->ID) ? $options['active_class'] . ' ' . $options['li_class'] : $options['li_class']) .'"><a href="'.get_permalink($parent->ID).'">'.$parent->post_title.'</a></li>';
+		$output .= '<li class="'. (($page->ID == $parent->ID) ? $options['active_class'] . ' ' . $options['li_class'] : $options['li_class']) .'"><a href="'.get_permalink($parent->ID).'">'.$parent->post_title.'</a></li>';
 
 	   	foreach($children as $child){
 	        $output .= '<li class="'. (($page->ID == $child->ID) ? $options['active_class'] . ' ' . $options['li_class'] : $options['li_class']) . '"><a href="'.get_permalink($child->ID).'">'.$child->post_title.'</a></li>';

@@ -53,7 +53,7 @@ class PCM_Settings {
 	      'desc'      => '',
 	      'label_for' => 'use_css'
 	    );
-	   	add_settings_field( 'use_css', __('Load Default Stylesheet'), array(get_called_class(), 'show_settings'), $option_name, $option_name, $field_args );
+	   //	add_settings_field( 'use_css', __('Load Default Stylesheet'), array(get_called_class(), 'show_settings'), $option_name, $option_name, $field_args );
 
         $field_args = array(
 		  'type'      => 'text',
